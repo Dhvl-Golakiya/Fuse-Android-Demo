@@ -37,8 +37,7 @@ namespace Native.Android
 		[Foreign(Language.Java)]
 		static Java.Object Create()
 		@{
-
-        Mapbox.getInstance(@(Activity.Package).@(Activity.Name).GetRootActivity(), 
+        	Mapbox.getInstance(@(Activity.Package).@(Activity.Name).GetRootActivity(), 
         	"<Map Box Key>");
         	return new CustomMapView(@(Activity.Package).@(Activity.Name).GetRootActivity());
 		@}

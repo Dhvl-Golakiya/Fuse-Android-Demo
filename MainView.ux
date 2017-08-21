@@ -1,9 +1,9 @@
 <App>
-   <Native.MyMapBox ux:Class="MapBoxView">
-    </Native.MyMapBox>
-   	<Panel>
-            <NativeViewHost>
-                <MapBoxView />
-            </NativeViewHost>
-    </Panel>
+	<Native.MyMapBox ux:Class="MapBoxView">
+	</Native.MyMapBox>
+	<ClientPanel>
+    	<NativeViewHost>
+    		<MapBoxView />
+    	</NativeViewHost>
+	</ClientPanel>
 </App>

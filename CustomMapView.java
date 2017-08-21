@@ -41,17 +41,14 @@ public class CustomMapView extends FrameLayout {
         options.styleUrl(Style.OUTDOORS);
         mMapView = new com.mapbox.mapboxsdk.maps.MapView(context, options);
         mMapView.getMapAsync(new OnMapReadyCallback() {
-            
             @Override
             public void onMapReady(MapboxMap mapboxMap) {
-                
                 mapboxMap.setOnMapClickListener(new MapboxMap.OnMapClickListener() {
                     @Override
                     public void onMapClick(@NonNull LatLng point) {
                         
                     }
                 });
-                
             }
         });
         this.addView(mMapView);
